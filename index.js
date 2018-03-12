@@ -5,6 +5,8 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 
 import auth from './routes/auth';
+import users from './routes/users';
+
 
 dotenv.config();
 
@@ -14,6 +16,7 @@ app.use(bodyParser.json());
 mongoose.connect(process.env.MONGODB_URL);
 
 app.use("/api/auth", auth);
+app.use("/api/users", users);
 
 // app.post('/api/auth', (req, res) => {
 //     res.status(400).json({errors: { global: "Invalid credentials"} });

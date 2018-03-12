@@ -26,6 +26,9 @@
     "dotenv": "^5.0.1",
     "express": "^4.16.2",
     "jsonwebtoken": "^8.2.0",
-    "mongoose": "^5.0.9"
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.9",
+    "mongoose-unique-validator": "^2.0.0",
+    "package.json": "^2.0.1"
   }
 }
